@@ -51,19 +51,13 @@ pip install -r requirements.txt
 python manage.py migrate
 ```
 
-5. Inicie o servidor Redis:
-
-```bash
-redis-server.exe  # no Windows, dentro da pasta do Redis
-```
-
-6. Inicie o Ollama (certifique-se que está instalado):
+5. Inicie o Ollama (certifique-se que está instalado):
 
 ```bash
 ollama serve
 ```
 
-7. Rode o servidor Django:
+6. Rode o servidor Django:
 
 ```bash
 python manage.py runserver
@@ -75,19 +69,10 @@ python manage.py runserver
 http://127.0.0.1:8000/
 ```
 
-## Estrutura do Projeto
-
-- `analysis/` - App Django com lógica de análise
-- `analysis/tasks.py` - Funções para processar arquivos grandes (antes com Celery)
-- `analysis/utils/` - Funções auxiliares para manipulação de arquivos e logs
-- `templates/` - HTML do dashboard
-- `static/` - Arquivos estáticos
-
 ## Observações
 
 - Para arquivos grandes, o processamento pode levar alguns minutos.
 - O modelo Ollama deve estar rodando na porta `11434`.
-- Redis deve estar ativo para que as tasks assíncronas funcionem (caso volte a usar Celery).
 
 ---
 
