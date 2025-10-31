@@ -1,0 +1,1943 @@
+2025-10-16 17:58:57,679 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 17:59:26,299 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 17:59:46,179 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 18:00:06,111 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 18:00:23,049 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 18:00:58,554 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 18:01:06,307 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 18:01:25,574 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 18:01:39,273 | INFO | Nova anï¿½lise iniciada.
+2025-10-16 18:01:56,696 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-10-16 18:02:07,699 | INFO | Anï¿½lise concluï¿½da em 28.43 segundos.
+2025-10-16 18:07:02,923 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 18:07:10,294 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 18:07:14,909 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 18:07:20,743 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 18:08:14,701 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 18:08:25,862 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 18:12:19,487 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 18:12:28,672 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 18:13:13,072 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\ai_analyst\settings.py changed, reloading.
+2025-10-16 18:13:17,881 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 18:13:29,391 | INFO | Arquivo recebido: gdp.csv, categoria: small
+2025-10-16 18:13:44,442 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-10-16 18:15:32,153 | INFO | Arquivo recebido: 10mb.csv, categoria: medium
+2025-10-16 18:15:34,682 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-10-16 18:19:56,174 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 18:20:09,577 | INFO | Arquivo recebido: 10mb.csv, categoria: medium
+2025-10-16 18:20:12,507 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-10-16 18:22:17,739 | INFO | Arquivo recebido: 100mb.csv, categoria: large
+2025-10-16 18:22:18,043 | WARNING | No hostname was supplied. Reverting to default 'localhost'
+2025-10-16 18:22:22,156 | ERROR | Erro na anï¿½lise: [WinError 10061] Nenhuma conexï¿½o pï¿½de ser feita porque a mï¿½quina de destino as recusou ativamente
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 32, in __call__
+    return self.__value__
+           ^^^^^^^^^^^^^^
+AttributeError: 'ChannelPromise' object has no attribute '__value__'. Did you mean: '__call__'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 459, in _ensure_connection
+    return retry_over_time(
+        self._connection_factory, self.recoverable_connection_errors,
+    ...<2 lines>...
+        callback, timeout=timeout
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 938, in _connection_factory
+    self._connection = self._establish_connection()
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 860, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\transport\pyamqp.py", line 203, in establish_connection
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\connection.py", line 324, in connect
+    self.transport.connect()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 132, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 187, in _connect
+    self.sock.connect(sa)
+    ~~~~~~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] Nenhuma conexï¿½o pï¿½de ser feita porque a mï¿½quina de destino as recusou ativamente
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py", line 92, in post
+    task = run_analysis_file.delay(temp_path, user_instructions)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 601, in apply_async
+    return app.send_task(
+           ~~~~~~~~~~~~~^
+        self.name, args, kwargs, task_id=task_id, producer=producer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **options
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\base.py", line 930, in send_task
+    amqp.send_task_message(P, name, message, **options)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\amqp.py", line 523, in send_task_message
+    ret = producer.publish(
+        body,
+    ...<8 lines>...
+        **properties
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 190, in publish
+    return _publish(
+        body, priority, content_type, content_encoding,
+        headers, properties, routing_key, mandatory, immediate,
+        exchange_name, declare, timeout, confirm_timeout, retry, retry_policy
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 556, in _ensured
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 200, in _publish
+    channel = self.channel
+              ^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 224, in _get_channel
+    channel = self._channel = channel()
+                              ~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 34, in __call__
+    value = self.__value__ = self.__contract__()
+                             ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 240, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 957, in default_channel
+    self._ensure_connection(**conn_opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 458, in _ensure_connection
+    with ctx():
+         ~~~^^
+  File "C:\Users\gabri\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [WinError 10061] Nenhuma conexï¿½o pï¿½de ser feita porque a mï¿½quina de destino as recusou ativamente
+2025-10-16 18:22:22,192 | ERROR | Internal Server Error: /api/analyze/
+2025-10-16 18:22:41,418 | INFO | Arquivo recebido: 100mb.csv, categoria: large
+2025-10-16 18:22:45,576 | ERROR | Erro na anï¿½lise: [WinError 10061] Nenhuma conexï¿½o pï¿½de ser feita porque a mï¿½quina de destino as recusou ativamente
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 32, in __call__
+    return self.__value__
+           ^^^^^^^^^^^^^^
+AttributeError: 'ChannelPromise' object has no attribute '__value__'. Did you mean: '__call__'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 459, in _ensure_connection
+    return retry_over_time(
+        self._connection_factory, self.recoverable_connection_errors,
+    ...<2 lines>...
+        callback, timeout=timeout
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 938, in _connection_factory
+    self._connection = self._establish_connection()
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 860, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\transport\pyamqp.py", line 203, in establish_connection
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\connection.py", line 324, in connect
+    self.transport.connect()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 132, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 187, in _connect
+    self.sock.connect(sa)
+    ~~~~~~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] Nenhuma conexï¿½o pï¿½de ser feita porque a mï¿½quina de destino as recusou ativamente
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py", line 92, in post
+    task = run_analysis_file.delay(temp_path, user_instructions)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 601, in apply_async
+    return app.send_task(
+           ~~~~~~~~~~~~~^
+        self.name, args, kwargs, task_id=task_id, producer=producer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **options
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\base.py", line 930, in send_task
+    amqp.send_task_message(P, name, message, **options)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\amqp.py", line 523, in send_task_message
+    ret = producer.publish(
+        body,
+    ...<8 lines>...
+        **properties
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 190, in publish
+    return _publish(
+        body, priority, content_type, content_encoding,
+        headers, properties, routing_key, mandatory, immediate,
+        exchange_name, declare, timeout, confirm_timeout, retry, retry_policy
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 556, in _ensured
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 200, in _publish
+    channel = self.channel
+              ^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 224, in _get_channel
+    channel = self._channel = channel()
+                              ~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 34, in __call__
+    value = self.__value__ = self.__contract__()
+                             ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 240, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 957, in default_channel
+    self._ensure_connection(**conn_opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 458, in _ensure_connection
+    with ctx():
+         ~~~^^
+  File "C:\Users\gabri\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [WinError 10061] Nenhuma conexï¿½o pï¿½de ser feita porque a mï¿½quina de destino as recusou ativamente
+2025-10-16 18:22:45,583 | ERROR | Internal Server Error: /api/analyze/
+2025-10-16 18:22:51,265 | INFO | Arquivo recebido: 10mb.csv, categoria: medium
+2025-10-16 18:22:53,001 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-10-16 18:24:55,364 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 18:28:58,820 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 18:29:50,510 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 18:30:47,041 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 18:31:28,063 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 18:31:56,296 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 18:32:02,078 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 18:32:24,595 | INFO | Arquivo recebido: 10mb.csv, categoria: medium
+2025-10-16 18:32:40,207 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-10-16 18:33:07,228 | INFO | Arquivo recebido: 100mb.csv, categoria: large
+2025-10-16 18:33:10,013 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-10-16 18:33:11,063 | ERROR | Erro na anï¿½lise: cannot unpack non-iterable bool object
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py", line 81, in post
+    ok, msg = test_ollama_connection()
+    ^^^^^^^
+TypeError: cannot unpack non-iterable bool object
+2025-10-16 18:33:11,067 | ERROR | Internal Server Error: /api/analyze/
+2025-10-16 18:34:13,574 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\utils\ollama_check.py changed, reloading.
+2025-10-16 18:34:34,326 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 18:34:39,126 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 18:34:54,549 | INFO | Arquivo recebido: 100mb.csv, categoria: large
+2025-10-16 18:34:55,787 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-10-16 18:34:56,836 | WARNING | No hostname was supplied. Reverting to default 'localhost'
+2025-10-16 18:35:00,964 | ERROR | Erro na anï¿½lise: [WinError 10061] Nenhuma conexï¿½o pï¿½de ser feita porque a mï¿½quina de destino as recusou ativamente
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 32, in __call__
+    return self.__value__
+           ^^^^^^^^^^^^^^
+AttributeError: 'ChannelPromise' object has no attribute '__value__'. Did you mean: '__call__'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 459, in _ensure_connection
+    return retry_over_time(
+        self._connection_factory, self.recoverable_connection_errors,
+    ...<2 lines>...
+        callback, timeout=timeout
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 938, in _connection_factory
+    self._connection = self._establish_connection()
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 860, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\transport\pyamqp.py", line 203, in establish_connection
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\connection.py", line 324, in connect
+    self.transport.connect()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 132, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 187, in _connect
+    self.sock.connect(sa)
+    ~~~~~~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] Nenhuma conexï¿½o pï¿½de ser feita porque a mï¿½quina de destino as recusou ativamente
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py", line 95, in post
+    task = run_analysis_file.delay(temp_path, user_instructions)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 601, in apply_async
+    return app.send_task(
+           ~~~~~~~~~~~~~^
+        self.name, args, kwargs, task_id=task_id, producer=producer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **options
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\base.py", line 930, in send_task
+    amqp.send_task_message(P, name, message, **options)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\amqp.py", line 523, in send_task_message
+    ret = producer.publish(
+        body,
+    ...<8 lines>...
+        **properties
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 190, in publish
+    return _publish(
+        body, priority, content_type, content_encoding,
+        headers, properties, routing_key, mandatory, immediate,
+        exchange_name, declare, timeout, confirm_timeout, retry, retry_policy
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 556, in _ensured
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 200, in _publish
+    channel = self.channel
+              ^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 224, in _get_channel
+    channel = self._channel = channel()
+                              ~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 34, in __call__
+    value = self.__value__ = self.__contract__()
+                             ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 240, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 957, in default_channel
+    self._ensure_connection(**conn_opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 458, in _ensure_connection
+    with ctx():
+         ~~~^^
+  File "C:\Users\gabri\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [WinError 10061] Nenhuma conexï¿½o pï¿½de ser feita porque a mï¿½quina de destino as recusou ativamente
+2025-10-16 18:35:00,980 | ERROR | Internal Server Error: /api/analyze/
+2025-10-16 18:35:37,417 | INFO | Arquivo recebido: 10mb.csv, categoria: medium
+2025-10-16 18:35:40,419 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-10-16 18:36:07,330 | INFO | Arquivo recebido: 100mb.csv, categoria: large
+2025-10-16 18:36:08,556 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-10-16 18:36:13,886 | ERROR | Erro na anï¿½lise: [WinError 10061] Nenhuma conexï¿½o pï¿½de ser feita porque a mï¿½quina de destino as recusou ativamente
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 32, in __call__
+    return self.__value__
+           ^^^^^^^^^^^^^^
+AttributeError: 'ChannelPromise' object has no attribute '__value__'. Did you mean: '__call__'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 459, in _ensure_connection
+    return retry_over_time(
+        self._connection_factory, self.recoverable_connection_errors,
+    ...<2 lines>...
+        callback, timeout=timeout
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 938, in _connection_factory
+    self._connection = self._establish_connection()
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 860, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\transport\pyamqp.py", line 203, in establish_connection
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\connection.py", line 324, in connect
+    self.transport.connect()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 132, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 187, in _connect
+    self.sock.connect(sa)
+    ~~~~~~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] Nenhuma conexï¿½o pï¿½de ser feita porque a mï¿½quina de destino as recusou ativamente
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py", line 95, in post
+    task = run_analysis_file.delay(temp_path, user_instructions)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 601, in apply_async
+    return app.send_task(
+           ~~~~~~~~~~~~~^
+        self.name, args, kwargs, task_id=task_id, producer=producer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **options
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\base.py", line 930, in send_task
+    amqp.send_task_message(P, name, message, **options)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\amqp.py", line 523, in send_task_message
+    ret = producer.publish(
+        body,
+    ...<8 lines>...
+        **properties
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 190, in publish
+    return _publish(
+        body, priority, content_type, content_encoding,
+        headers, properties, routing_key, mandatory, immediate,
+        exchange_name, declare, timeout, confirm_timeout, retry, retry_policy
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 556, in _ensured
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 200, in _publish
+    channel = self.channel
+              ^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 224, in _get_channel
+    channel = self._channel = channel()
+                              ~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 34, in __call__
+    value = self.__value__ = self.__contract__()
+                             ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 240, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 957, in default_channel
+    self._ensure_connection(**conn_opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 458, in _ensure_connection
+    with ctx():
+         ~~~^^
+  File "C:\Users\gabri\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [WinError 10061] Nenhuma conexï¿½o pï¿½de ser feita porque a mï¿½quina de destino as recusou ativamente
+2025-10-16 18:36:13,890 | ERROR | Internal Server Error: /api/analyze/
+2025-10-16 18:40:17,087 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\tasks.py changed, reloading.
+2025-10-16 18:48:35,736 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\ai_analyst\settings.py changed, reloading.
+2025-10-16 18:48:47,731 | INFO | Arquivo recebido: 100mb.csv, categoria: large
+2025-10-16 18:49:04,322 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-10-16 18:49:04,960 | WARNING | No hostname was supplied. Reverting to default 'localhost'
+2025-10-16 18:49:09,031 | ERROR | Erro na anï¿½lise: [WinError 10061] Nenhuma conexï¿½o pï¿½de ser feita porque a mï¿½quina de destino as recusou ativamente
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 32, in __call__
+    return self.__value__
+           ^^^^^^^^^^^^^^
+AttributeError: 'ChannelPromise' object has no attribute '__value__'. Did you mean: '__call__'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 459, in _ensure_connection
+    return retry_over_time(
+        self._connection_factory, self.recoverable_connection_errors,
+    ...<2 lines>...
+        callback, timeout=timeout
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 938, in _connection_factory
+    self._connection = self._establish_connection()
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 860, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\transport\pyamqp.py", line 203, in establish_connection
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\connection.py", line 324, in connect
+    self.transport.connect()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 132, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 187, in _connect
+    self.sock.connect(sa)
+    ~~~~~~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] Nenhuma conexï¿½o pï¿½de ser feita porque a mï¿½quina de destino as recusou ativamente
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py", line 95, in post
+    task = run_analysis_file.delay(temp_path, user_instructions)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 601, in apply_async
+    return app.send_task(
+           ~~~~~~~~~~~~~^
+        self.name, args, kwargs, task_id=task_id, producer=producer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **options
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\base.py", line 930, in send_task
+    amqp.send_task_message(P, name, message, **options)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\amqp.py", line 523, in send_task_message
+    ret = producer.publish(
+        body,
+    ...<8 lines>...
+        **properties
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 190, in publish
+    return _publish(
+        body, priority, content_type, content_encoding,
+        headers, properties, routing_key, mandatory, immediate,
+        exchange_name, declare, timeout, confirm_timeout, retry, retry_policy
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 556, in _ensured
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 200, in _publish
+    channel = self.channel
+              ^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 224, in _get_channel
+    channel = self._channel = channel()
+                              ~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 34, in __call__
+    value = self.__value__ = self.__contract__()
+                             ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 240, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 957, in default_channel
+    self._ensure_connection(**conn_opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 458, in _ensure_connection
+    with ctx():
+         ~~~^^
+  File "C:\Users\gabri\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [WinError 10061] Nenhuma conexï¿½o pï¿½de ser feita porque a mï¿½quina de destino as recusou ativamente
+2025-10-16 18:49:09,045 | ERROR | Internal Server Error: /api/analyze/
+2025-10-16 18:51:38,247 | INFO | Arquivo recebido: 100mb.csv, categoria: large
+2025-10-16 18:51:39,481 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-10-16 18:51:44,612 | ERROR | Erro na anï¿½lise: [WinError 10061] Nenhuma conexï¿½o pï¿½de ser feita porque a mï¿½quina de destino as recusou ativamente
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 32, in __call__
+    return self.__value__
+           ^^^^^^^^^^^^^^
+AttributeError: 'ChannelPromise' object has no attribute '__value__'. Did you mean: '__call__'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 459, in _ensure_connection
+    return retry_over_time(
+        self._connection_factory, self.recoverable_connection_errors,
+    ...<2 lines>...
+        callback, timeout=timeout
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 938, in _connection_factory
+    self._connection = self._establish_connection()
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 860, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\transport\pyamqp.py", line 203, in establish_connection
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\connection.py", line 324, in connect
+    self.transport.connect()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 132, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 187, in _connect
+    self.sock.connect(sa)
+    ~~~~~~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] Nenhuma conexï¿½o pï¿½de ser feita porque a mï¿½quina de destino as recusou ativamente
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py", line 95, in post
+    task = run_analysis_file.delay(temp_path, user_instructions)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 601, in apply_async
+    return app.send_task(
+           ~~~~~~~~~~~~~^
+        self.name, args, kwargs, task_id=task_id, producer=producer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **options
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\base.py", line 930, in send_task
+    amqp.send_task_message(P, name, message, **options)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\amqp.py", line 523, in send_task_message
+    ret = producer.publish(
+        body,
+    ...<8 lines>...
+        **properties
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 190, in publish
+    return _publish(
+        body, priority, content_type, content_encoding,
+        headers, properties, routing_key, mandatory, immediate,
+        exchange_name, declare, timeout, confirm_timeout, retry, retry_policy
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 556, in _ensured
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 200, in _publish
+    channel = self.channel
+              ^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 224, in _get_channel
+    channel = self._channel = channel()
+                              ~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 34, in __call__
+    value = self.__value__ = self.__contract__()
+                             ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 240, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 957, in default_channel
+    self._ensure_connection(**conn_opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 458, in _ensure_connection
+    with ctx():
+         ~~~^^
+  File "C:\Users\gabri\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [WinError 10061] Nenhuma conexï¿½o pï¿½de ser feita porque a mï¿½quina de destino as recusou ativamente
+2025-10-16 18:51:44,616 | ERROR | Internal Server Error: /api/analyze/
+2025-10-16 18:56:47,581 | INFO | Arquivo recebido: 10mb.csv, categoria: medium
+2025-10-16 18:57:03,554 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-10-16 18:57:18,550 | INFO | Arquivo recebido: 100mb.csv, categoria: large
+2025-10-16 18:57:19,773 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-10-16 18:57:24,589 | ERROR | Erro na anï¿½lise: [WinError 10061] Nenhuma conexï¿½o pï¿½de ser feita porque a mï¿½quina de destino as recusou ativamente
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 32, in __call__
+    return self.__value__
+           ^^^^^^^^^^^^^^
+AttributeError: 'ChannelPromise' object has no attribute '__value__'. Did you mean: '__call__'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 459, in _ensure_connection
+    return retry_over_time(
+        self._connection_factory, self.recoverable_connection_errors,
+    ...<2 lines>...
+        callback, timeout=timeout
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 938, in _connection_factory
+    self._connection = self._establish_connection()
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 860, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\transport\pyamqp.py", line 203, in establish_connection
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\connection.py", line 324, in connect
+    self.transport.connect()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 132, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 187, in _connect
+    self.sock.connect(sa)
+    ~~~~~~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] Nenhuma conexï¿½o pï¿½de ser feita porque a mï¿½quina de destino as recusou ativamente
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py", line 95, in post
+    task = run_analysis_file.delay(temp_path, user_instructions)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 601, in apply_async
+    return app.send_task(
+           ~~~~~~~~~~~~~^
+        self.name, args, kwargs, task_id=task_id, producer=producer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **options
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\base.py", line 930, in send_task
+    amqp.send_task_message(P, name, message, **options)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\amqp.py", line 523, in send_task_message
+    ret = producer.publish(
+        body,
+    ...<8 lines>...
+        **properties
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 190, in publish
+    return _publish(
+        body, priority, content_type, content_encoding,
+        headers, properties, routing_key, mandatory, immediate,
+        exchange_name, declare, timeout, confirm_timeout, retry, retry_policy
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 556, in _ensured
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 200, in _publish
+    channel = self.channel
+              ^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 224, in _get_channel
+    channel = self._channel = channel()
+                              ~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 34, in __call__
+    value = self.__value__ = self.__contract__()
+                             ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 240, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 957, in default_channel
+    self._ensure_connection(**conn_opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 458, in _ensure_connection
+    with ctx():
+         ~~~^^
+  File "C:\Users\gabri\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [WinError 10061] Nenhuma conexï¿½o pï¿½de ser feita porque a mï¿½quina de destino as recusou ativamente
+2025-10-16 18:57:24,593 | ERROR | Internal Server Error: /api/analyze/
+2025-10-16 18:59:02,154 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\utils\ollama_check.py changed, reloading.
+2025-10-16 18:59:11,008 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\tasks.py changed, reloading.
+2025-10-16 18:59:21,296 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 18:59:33,257 | INFO | Arquivo recebido: 10mb.csv, categoria: medium
+2025-10-16 18:59:43,270 | ERROR | Ollama server nï¿½o estï¿½ disponï¿½vel apï¿½s vï¿½rias tentativas.
+2025-10-16 18:59:43,272 | ERROR | Service Unavailable: /api/analyze/
+2025-10-16 19:00:12,866 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 19:00:19,260 | INFO | Arquivo recebido: 10mb.csv, categoria: medium
+2025-10-16 19:00:22,181 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-10-16 19:00:41,089 | INFO | Arquivo recebido: 100mb.csv, categoria: large
+2025-10-16 19:00:51,102 | ERROR | Ollama server nï¿½o estï¿½ disponï¿½vel apï¿½s vï¿½rias tentativas.
+2025-10-16 19:00:51,103 | ERROR | Erro na anï¿½lise: cannot unpack non-iterable bool object
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py", line 81, in post
+    ok, msg = check_ollama_server()
+    ^^^^^^^
+TypeError: cannot unpack non-iterable bool object
+2025-10-16 19:00:51,105 | ERROR | Internal Server Error: /api/analyze/
+2025-10-16 19:01:10,043 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 19:01:17,715 | INFO | Arquivo recebido: 10mb.csv, categoria: medium
+2025-10-16 19:01:27,732 | ERROR | Ollama server nï¿½o estï¿½ disponï¿½vel apï¿½s vï¿½rias tentativas.
+2025-10-16 19:01:27,734 | ERROR | Service Unavailable: /api/analyze/
+2025-10-16 19:02:45,481 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\utils\ollama_check.py changed, reloading.
+2025-10-16 19:03:21,758 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 19:03:42,850 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 19:03:50,662 | INFO | Arquivo recebido: 10mb.csv, categoria: medium
+2025-10-16 19:03:50,663 | INFO | Ollama server estï¿½ disponï¿½vel.
+2025-10-16 19:04:06,969 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-10-16 19:04:34,016 | INFO | Arquivo recebido: 100mb.csv, categoria: large
+2025-10-16 19:04:34,016 | INFO | Ollama server estï¿½ disponï¿½vel.
+2025-10-16 19:04:34,180 | WARNING | No hostname was supplied. Reverting to default 'localhost'
+2025-10-16 19:04:38,292 | ERROR | Erro na anï¿½lise: [WinError 10061] Nenhuma conexï¿½o pï¿½de ser feita porque a mï¿½quina de destino as recusou ativamente
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 32, in __call__
+    return self.__value__
+           ^^^^^^^^^^^^^^
+AttributeError: 'ChannelPromise' object has no attribute '__value__'. Did you mean: '__call__'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 459, in _ensure_connection
+    return retry_over_time(
+        self._connection_factory, self.recoverable_connection_errors,
+    ...<2 lines>...
+        callback, timeout=timeout
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 938, in _connection_factory
+    self._connection = self._establish_connection()
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 860, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\transport\pyamqp.py", line 203, in establish_connection
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\connection.py", line 324, in connect
+    self.transport.connect()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 132, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 187, in _connect
+    self.sock.connect(sa)
+    ~~~~~~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] Nenhuma conexï¿½o pï¿½de ser feita porque a mï¿½quina de destino as recusou ativamente
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py", line 78, in post
+    task = run_analysis_file.delay(temp_path, user_instructions)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 601, in apply_async
+    return app.send_task(
+           ~~~~~~~~~~~~~^
+        self.name, args, kwargs, task_id=task_id, producer=producer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **options
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\base.py", line 930, in send_task
+    amqp.send_task_message(P, name, message, **options)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\amqp.py", line 523, in send_task_message
+    ret = producer.publish(
+        body,
+    ...<8 lines>...
+        **properties
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 190, in publish
+    return _publish(
+        body, priority, content_type, content_encoding,
+        headers, properties, routing_key, mandatory, immediate,
+        exchange_name, declare, timeout, confirm_timeout, retry, retry_policy
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 556, in _ensured
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 200, in _publish
+    channel = self.channel
+              ^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 224, in _get_channel
+    channel = self._channel = channel()
+                              ~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 34, in __call__
+    value = self.__value__ = self.__contract__()
+                             ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 240, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 957, in default_channel
+    self._ensure_connection(**conn_opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 458, in _ensure_connection
+    with ctx():
+         ~~~^^
+  File "C:\Users\gabri\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [WinError 10061] Nenhuma conexï¿½o pï¿½de ser feita porque a mï¿½quina de destino as recusou ativamente
+2025-10-16 19:04:38,349 | ERROR | Internal Server Error: /api/analyze/
+2025-10-16 19:11:57,997 | INFO | Arquivo recebido: 10mb.csv, categoria: medium
+2025-10-16 19:12:00,023 | WARNING | Ollama server nï¿½o disponï¿½vel: [WinError 10061] Nenhuma conexï¿½o pï¿½de ser feita porque a mï¿½quina de destino as recusou ativamente
+2025-10-16 19:12:00,024 | ERROR | Service Unavailable: /api/analyze/
+2025-10-16 19:13:14,140 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 19:13:18,581 | INFO | Arquivo recebido: 10mb.csv, categoria: medium
+2025-10-16 19:13:18,582 | INFO | Ollama server está disponível.
+2025-10-16 19:13:34,819 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-10-16 19:13:54,774 | INFO | Arquivo recebido: 100mb.csv, categoria: large
+2025-10-16 19:13:54,774 | INFO | Ollama server está disponível.
+2025-10-16 19:13:54,880 | WARNING | No hostname was supplied. Reverting to default 'localhost'
+2025-10-16 19:13:58,940 | ERROR | Erro na análise: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 32, in __call__
+    return self.__value__
+           ^^^^^^^^^^^^^^
+AttributeError: 'ChannelPromise' object has no attribute '__value__'. Did you mean: '__call__'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 459, in _ensure_connection
+    return retry_over_time(
+        self._connection_factory, self.recoverable_connection_errors,
+    ...<2 lines>...
+        callback, timeout=timeout
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 938, in _connection_factory
+    self._connection = self._establish_connection()
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 860, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\transport\pyamqp.py", line 203, in establish_connection
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\connection.py", line 324, in connect
+    self.transport.connect()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 132, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 187, in _connect
+    self.sock.connect(sa)
+    ~~~~~~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py", line 78, in post
+    task = run_analysis_file.delay(temp_path, user_instructions)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 601, in apply_async
+    return app.send_task(
+           ~~~~~~~~~~~~~^
+        self.name, args, kwargs, task_id=task_id, producer=producer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **options
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\base.py", line 930, in send_task
+    amqp.send_task_message(P, name, message, **options)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\amqp.py", line 523, in send_task_message
+    ret = producer.publish(
+        body,
+    ...<8 lines>...
+        **properties
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 190, in publish
+    return _publish(
+        body, priority, content_type, content_encoding,
+        headers, properties, routing_key, mandatory, immediate,
+        exchange_name, declare, timeout, confirm_timeout, retry, retry_policy
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 556, in _ensured
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 200, in _publish
+    channel = self.channel
+              ^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 224, in _get_channel
+    channel = self._channel = channel()
+                              ~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 34, in __call__
+    value = self.__value__ = self.__contract__()
+                             ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 240, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 957, in default_channel
+    self._ensure_connection(**conn_opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 458, in _ensure_connection
+    with ctx():
+         ~~~^^
+  File "C:\Users\gabri\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+2025-10-16 19:13:58,957 | ERROR | Internal Server Error: /api/analyze/
+2025-10-16 19:17:27,964 | INFO | Arquivo recebido: 100mb.csv, categoria: large
+2025-10-16 19:17:27,965 | INFO | Ollama server está disponível.
+2025-10-16 19:17:28,085 | WARNING | No hostname was supplied. Reverting to default 'localhost'
+2025-10-16 19:17:32,167 | ERROR | Erro na análise: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 32, in __call__
+    return self.__value__
+           ^^^^^^^^^^^^^^
+AttributeError: 'ChannelPromise' object has no attribute '__value__'. Did you mean: '__call__'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 459, in _ensure_connection
+    return retry_over_time(
+        self._connection_factory, self.recoverable_connection_errors,
+    ...<2 lines>...
+        callback, timeout=timeout
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 938, in _connection_factory
+    self._connection = self._establish_connection()
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 860, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\transport\pyamqp.py", line 203, in establish_connection
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\connection.py", line 324, in connect
+    self.transport.connect()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 132, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 187, in _connect
+    self.sock.connect(sa)
+    ~~~~~~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py", line 78, in post
+    task = run_analysis_file.delay(temp_path, user_instructions)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 601, in apply_async
+    return app.send_task(
+           ~~~~~~~~~~~~~^
+        self.name, args, kwargs, task_id=task_id, producer=producer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **options
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\base.py", line 930, in send_task
+    amqp.send_task_message(P, name, message, **options)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\amqp.py", line 523, in send_task_message
+    ret = producer.publish(
+        body,
+    ...<8 lines>...
+        **properties
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 190, in publish
+    return _publish(
+        body, priority, content_type, content_encoding,
+        headers, properties, routing_key, mandatory, immediate,
+        exchange_name, declare, timeout, confirm_timeout, retry, retry_policy
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 556, in _ensured
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 200, in _publish
+    channel = self.channel
+              ^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 224, in _get_channel
+    channel = self._channel = channel()
+                              ~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 34, in __call__
+    value = self.__value__ = self.__contract__()
+                             ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 240, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 957, in default_channel
+    self._ensure_connection(**conn_opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 458, in _ensure_connection
+    with ctx():
+         ~~~^^
+  File "C:\Users\gabri\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+2025-10-16 19:17:32,176 | ERROR | Internal Server Error: /api/analyze/
+2025-10-16 19:20:16,404 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\tasks.py changed, reloading.
+2025-10-16 19:21:48,252 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\tasks.py changed, reloading.
+2025-10-16 19:22:24,792 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 19:22:38,283 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\tasks.py changed, reloading.
+2025-10-16 19:23:04,335 | INFO | Arquivo recebido: 10mb.csv, categoria: medium
+2025-10-16 19:23:04,335 | INFO | Ollama server está disponível.
+2025-10-16 19:23:20,279 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-10-16 19:23:37,812 | INFO | Arquivo recebido: 100mb.csv, categoria: large
+2025-10-16 19:23:37,813 | INFO | Ollama server está disponível.
+2025-10-16 19:23:37,980 | WARNING | No hostname was supplied. Reverting to default 'localhost'
+2025-10-16 19:23:42,065 | ERROR | Erro na análise: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 32, in __call__
+    return self.__value__
+           ^^^^^^^^^^^^^^
+AttributeError: 'ChannelPromise' object has no attribute '__value__'. Did you mean: '__call__'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 459, in _ensure_connection
+    return retry_over_time(
+        self._connection_factory, self.recoverable_connection_errors,
+    ...<2 lines>...
+        callback, timeout=timeout
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 938, in _connection_factory
+    self._connection = self._establish_connection()
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 860, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\transport\pyamqp.py", line 203, in establish_connection
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\connection.py", line 324, in connect
+    self.transport.connect()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 132, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 187, in _connect
+    self.sock.connect(sa)
+    ~~~~~~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py", line 78, in post
+    task = run_analysis_file.delay(temp_path, user_instructions)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 601, in apply_async
+    return app.send_task(
+           ~~~~~~~~~~~~~^
+        self.name, args, kwargs, task_id=task_id, producer=producer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **options
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\base.py", line 930, in send_task
+    amqp.send_task_message(P, name, message, **options)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\amqp.py", line 523, in send_task_message
+    ret = producer.publish(
+        body,
+    ...<8 lines>...
+        **properties
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 190, in publish
+    return _publish(
+        body, priority, content_type, content_encoding,
+        headers, properties, routing_key, mandatory, immediate,
+        exchange_name, declare, timeout, confirm_timeout, retry, retry_policy
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 556, in _ensured
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 200, in _publish
+    channel = self.channel
+              ^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 224, in _get_channel
+    channel = self._channel = channel()
+                              ~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 34, in __call__
+    value = self.__value__ = self.__contract__()
+                             ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 240, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 957, in default_channel
+    self._ensure_connection(**conn_opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 458, in _ensure_connection
+    with ctx():
+         ~~~^^
+  File "C:\Users\gabri\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+2025-10-16 19:23:42,083 | ERROR | Internal Server Error: /api/analyze/
+2025-10-16 19:26:42,714 | INFO | Arquivo recebido: 10mb.csv, categoria: medium
+2025-10-16 19:26:42,715 | INFO | Ollama server está disponível.
+2025-10-16 19:26:58,155 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-10-16 19:27:16,139 | INFO | Arquivo recebido: 100mb.csv, categoria: large
+2025-10-16 19:27:16,139 | INFO | Ollama server está disponível.
+2025-10-16 19:27:16,239 | WARNING | No hostname was supplied. Reverting to default 'localhost'
+2025-10-16 19:27:20,293 | ERROR | Erro na análise: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 32, in __call__
+    return self.__value__
+           ^^^^^^^^^^^^^^
+AttributeError: 'ChannelPromise' object has no attribute '__value__'. Did you mean: '__call__'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 459, in _ensure_connection
+    return retry_over_time(
+        self._connection_factory, self.recoverable_connection_errors,
+    ...<2 lines>...
+        callback, timeout=timeout
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 938, in _connection_factory
+    self._connection = self._establish_connection()
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 860, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\transport\pyamqp.py", line 203, in establish_connection
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\connection.py", line 324, in connect
+    self.transport.connect()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 132, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 187, in _connect
+    self.sock.connect(sa)
+    ~~~~~~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py", line 78, in post
+    task = run_analysis_file.delay(temp_path, user_instructions)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 601, in apply_async
+    return app.send_task(
+           ~~~~~~~~~~~~~^
+        self.name, args, kwargs, task_id=task_id, producer=producer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **options
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\base.py", line 930, in send_task
+    amqp.send_task_message(P, name, message, **options)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\amqp.py", line 523, in send_task_message
+    ret = producer.publish(
+        body,
+    ...<8 lines>...
+        **properties
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 190, in publish
+    return _publish(
+        body, priority, content_type, content_encoding,
+        headers, properties, routing_key, mandatory, immediate,
+        exchange_name, declare, timeout, confirm_timeout, retry, retry_policy
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 556, in _ensured
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 200, in _publish
+    channel = self.channel
+              ^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 224, in _get_channel
+    channel = self._channel = channel()
+                              ~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 34, in __call__
+    value = self.__value__ = self.__contract__()
+                             ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 240, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 957, in default_channel
+    self._ensure_connection(**conn_opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 458, in _ensure_connection
+    with ctx():
+         ~~~^^
+  File "C:\Users\gabri\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+2025-10-16 19:27:20,311 | ERROR | Internal Server Error: /api/analyze/
+2025-10-16 19:29:41,481 | INFO | Arquivo recebido: 100mb.csv, categoria: large
+2025-10-16 19:29:41,481 | INFO | Ollama server está disponível.
+2025-10-16 19:29:45,620 | ERROR | Erro na análise: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 32, in __call__
+    return self.__value__
+           ^^^^^^^^^^^^^^
+AttributeError: 'ChannelPromise' object has no attribute '__value__'. Did you mean: '__call__'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 459, in _ensure_connection
+    return retry_over_time(
+        self._connection_factory, self.recoverable_connection_errors,
+    ...<2 lines>...
+        callback, timeout=timeout
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 938, in _connection_factory
+    self._connection = self._establish_connection()
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 860, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\transport\pyamqp.py", line 203, in establish_connection
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\connection.py", line 324, in connect
+    self.transport.connect()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 132, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 187, in _connect
+    self.sock.connect(sa)
+    ~~~~~~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py", line 78, in post
+    task = run_analysis_file.delay(temp_path, user_instructions)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 601, in apply_async
+    return app.send_task(
+           ~~~~~~~~~~~~~^
+        self.name, args, kwargs, task_id=task_id, producer=producer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **options
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\base.py", line 930, in send_task
+    amqp.send_task_message(P, name, message, **options)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\amqp.py", line 523, in send_task_message
+    ret = producer.publish(
+        body,
+    ...<8 lines>...
+        **properties
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 190, in publish
+    return _publish(
+        body, priority, content_type, content_encoding,
+        headers, properties, routing_key, mandatory, immediate,
+        exchange_name, declare, timeout, confirm_timeout, retry, retry_policy
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 556, in _ensured
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 200, in _publish
+    channel = self.channel
+              ^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 224, in _get_channel
+    channel = self._channel = channel()
+                              ~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 34, in __call__
+    value = self.__value__ = self.__contract__()
+                             ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 240, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 957, in default_channel
+    self._ensure_connection(**conn_opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 458, in _ensure_connection
+    with ctx():
+         ~~~^^
+  File "C:\Users\gabri\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+2025-10-16 19:29:45,625 | ERROR | Internal Server Error: /api/analyze/
+2025-10-16 19:30:19,271 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\tasks.py changed, reloading.
+2025-10-16 19:30:35,794 | INFO | Arquivo recebido: 100mb.csv, categoria: large
+2025-10-16 19:30:35,795 | INFO | Ollama server está disponível.
+2025-10-16 19:30:35,929 | WARNING | No hostname was supplied. Reverting to default 'localhost'
+2025-10-16 19:30:40,026 | ERROR | Erro na análise: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 32, in __call__
+    return self.__value__
+           ^^^^^^^^^^^^^^
+AttributeError: 'ChannelPromise' object has no attribute '__value__'. Did you mean: '__call__'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 459, in _ensure_connection
+    return retry_over_time(
+        self._connection_factory, self.recoverable_connection_errors,
+    ...<2 lines>...
+        callback, timeout=timeout
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 938, in _connection_factory
+    self._connection = self._establish_connection()
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 860, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\transport\pyamqp.py", line 203, in establish_connection
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\connection.py", line 324, in connect
+    self.transport.connect()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 132, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 187, in _connect
+    self.sock.connect(sa)
+    ~~~~~~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py", line 78, in post
+    task = run_analysis_file.delay(temp_path, user_instructions)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 601, in apply_async
+    return app.send_task(
+           ~~~~~~~~~~~~~^
+        self.name, args, kwargs, task_id=task_id, producer=producer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **options
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\base.py", line 930, in send_task
+    amqp.send_task_message(P, name, message, **options)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\amqp.py", line 523, in send_task_message
+    ret = producer.publish(
+        body,
+    ...<8 lines>...
+        **properties
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 190, in publish
+    return _publish(
+        body, priority, content_type, content_encoding,
+        headers, properties, routing_key, mandatory, immediate,
+        exchange_name, declare, timeout, confirm_timeout, retry, retry_policy
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 556, in _ensured
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 200, in _publish
+    channel = self.channel
+              ^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 224, in _get_channel
+    channel = self._channel = channel()
+                              ~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 34, in __call__
+    value = self.__value__ = self.__contract__()
+                             ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 240, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 957, in default_channel
+    self._ensure_connection(**conn_opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 458, in _ensure_connection
+    with ctx():
+         ~~~^^
+  File "C:\Users\gabri\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+2025-10-16 19:30:40,034 | ERROR | Internal Server Error: /api/analyze/
+2025-10-16 19:33:16,836 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\tasks.py changed, reloading.
+2025-10-16 19:34:27,949 | WARNING | Not Found: /
+2025-10-16 19:34:37,153 | INFO | Arquivo recebido: 100mb.csv, categoria: large
+2025-10-16 19:34:37,154 | INFO | Ollama server está disponível.
+2025-10-16 19:34:37,297 | WARNING | No hostname was supplied. Reverting to default 'localhost'
+2025-10-16 19:34:41,396 | ERROR | Erro na análise: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 32, in __call__
+    return self.__value__
+           ^^^^^^^^^^^^^^
+AttributeError: 'ChannelPromise' object has no attribute '__value__'. Did you mean: '__call__'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 459, in _ensure_connection
+    return retry_over_time(
+        self._connection_factory, self.recoverable_connection_errors,
+    ...<2 lines>...
+        callback, timeout=timeout
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 938, in _connection_factory
+    self._connection = self._establish_connection()
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 860, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\transport\pyamqp.py", line 203, in establish_connection
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\connection.py", line 324, in connect
+    self.transport.connect()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 132, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 187, in _connect
+    self.sock.connect(sa)
+    ~~~~~~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py", line 78, in post
+    task = run_analysis_file.delay(temp_path, user_instructions)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 601, in apply_async
+    return app.send_task(
+           ~~~~~~~~~~~~~^
+        self.name, args, kwargs, task_id=task_id, producer=producer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **options
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\base.py", line 930, in send_task
+    amqp.send_task_message(P, name, message, **options)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\amqp.py", line 523, in send_task_message
+    ret = producer.publish(
+        body,
+    ...<8 lines>...
+        **properties
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 190, in publish
+    return _publish(
+        body, priority, content_type, content_encoding,
+        headers, properties, routing_key, mandatory, immediate,
+        exchange_name, declare, timeout, confirm_timeout, retry, retry_policy
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 556, in _ensured
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 200, in _publish
+    channel = self.channel
+              ^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 224, in _get_channel
+    channel = self._channel = channel()
+                              ~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 34, in __call__
+    value = self.__value__ = self.__contract__()
+                             ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 240, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 957, in default_channel
+    self._ensure_connection(**conn_opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 458, in _ensure_connection
+    with ctx():
+         ~~~^^
+  File "C:\Users\gabri\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+2025-10-16 19:34:41,403 | ERROR | Internal Server Error: /api/analyze/
+2025-10-16 19:37:22,772 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\tasks.py changed, reloading.
+2025-10-16 19:38:26,492 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 19:38:33,139 | INFO | Arquivo recebido: 100mb.csv, categoria: large
+2025-10-16 19:38:33,140 | INFO | Ollama server está disponível.
+2025-10-16 19:38:33,264 | WARNING | No hostname was supplied. Reverting to default 'localhost'
+2025-10-16 19:38:37,385 | ERROR | Erro na análise: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 32, in __call__
+    return self.__value__
+           ^^^^^^^^^^^^^^
+AttributeError: 'ChannelPromise' object has no attribute '__value__'. Did you mean: '__call__'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 459, in _ensure_connection
+    return retry_over_time(
+        self._connection_factory, self.recoverable_connection_errors,
+    ...<2 lines>...
+        callback, timeout=timeout
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 938, in _connection_factory
+    self._connection = self._establish_connection()
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 860, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\transport\pyamqp.py", line 203, in establish_connection
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\connection.py", line 324, in connect
+    self.transport.connect()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 132, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 187, in _connect
+    self.sock.connect(sa)
+    ~~~~~~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py", line 79, in post
+    task = run_analysis_file.delay(temp_path, user_instructions)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 601, in apply_async
+    return app.send_task(
+           ~~~~~~~~~~~~~^
+        self.name, args, kwargs, task_id=task_id, producer=producer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **options
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\base.py", line 930, in send_task
+    amqp.send_task_message(P, name, message, **options)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\amqp.py", line 523, in send_task_message
+    ret = producer.publish(
+        body,
+    ...<8 lines>...
+        **properties
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 190, in publish
+    return _publish(
+        body, priority, content_type, content_encoding,
+        headers, properties, routing_key, mandatory, immediate,
+        exchange_name, declare, timeout, confirm_timeout, retry, retry_policy
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 556, in _ensured
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 200, in _publish
+    channel = self.channel
+              ^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 224, in _get_channel
+    channel = self._channel = channel()
+                              ~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 34, in __call__
+    value = self.__value__ = self.__contract__()
+                             ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 240, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 957, in default_channel
+    self._ensure_connection(**conn_opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 458, in _ensure_connection
+    with ctx():
+         ~~~^^
+  File "C:\Users\gabri\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+2025-10-16 19:38:37,394 | ERROR | Internal Server Error: /api/analyze/
+2025-10-16 19:39:51,489 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\tasks.py changed, reloading.
+2025-10-16 19:39:59,610 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 19:40:11,309 | INFO | Arquivo recebido: 10mb.csv, categoria: medium
+2025-10-16 19:40:11,310 | INFO | Ollama server está disponível.
+2025-10-16 19:40:26,542 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-10-16 19:40:43,629 | INFO | Arquivo recebido: 100mb.csv, categoria: large
+2025-10-16 19:40:43,630 | INFO | Ollama server está disponível.
+2025-10-16 19:40:43,748 | WARNING | No hostname was supplied. Reverting to default 'localhost'
+2025-10-16 19:40:47,837 | ERROR | Erro na análise: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 32, in __call__
+    return self.__value__
+           ^^^^^^^^^^^^^^
+AttributeError: 'ChannelPromise' object has no attribute '__value__'. Did you mean: '__call__'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 459, in _ensure_connection
+    return retry_over_time(
+        self._connection_factory, self.recoverable_connection_errors,
+    ...<2 lines>...
+        callback, timeout=timeout
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 938, in _connection_factory
+    self._connection = self._establish_connection()
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 860, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\transport\pyamqp.py", line 203, in establish_connection
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\connection.py", line 324, in connect
+    self.transport.connect()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 132, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 187, in _connect
+    self.sock.connect(sa)
+    ~~~~~~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py", line 78, in post
+    task = run_analysis_file.delay(temp_path, user_instructions)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 601, in apply_async
+    return app.send_task(
+           ~~~~~~~~~~~~~^
+        self.name, args, kwargs, task_id=task_id, producer=producer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **options
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\base.py", line 930, in send_task
+    amqp.send_task_message(P, name, message, **options)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\amqp.py", line 523, in send_task_message
+    ret = producer.publish(
+        body,
+    ...<8 lines>...
+        **properties
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 190, in publish
+    return _publish(
+        body, priority, content_type, content_encoding,
+        headers, properties, routing_key, mandatory, immediate,
+        exchange_name, declare, timeout, confirm_timeout, retry, retry_policy
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 556, in _ensured
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 200, in _publish
+    channel = self.channel
+              ^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 224, in _get_channel
+    channel = self._channel = channel()
+                              ~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 34, in __call__
+    value = self.__value__ = self.__contract__()
+                             ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 240, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 957, in default_channel
+    self._ensure_connection(**conn_opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 458, in _ensure_connection
+    with ctx():
+         ~~~^^
+  File "C:\Users\gabri\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+2025-10-16 19:40:47,855 | ERROR | Internal Server Error: /api/analyze/
+2025-10-16 19:41:18,076 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\tasks.py changed, reloading.
+2025-10-16 19:41:24,586 | INFO | C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py changed, reloading.
+2025-10-16 19:41:30,704 | INFO | Arquivo recebido: 100mb.csv, categoria: large
+2025-10-16 19:41:30,706 | INFO | Ollama server está disponível.
+2025-10-16 19:41:30,841 | WARNING | No hostname was supplied. Reverting to default 'localhost'
+2025-10-16 19:41:34,902 | ERROR | Erro na análise: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 32, in __call__
+    return self.__value__
+           ^^^^^^^^^^^^^^
+AttributeError: 'ChannelPromise' object has no attribute '__value__'. Did you mean: '__call__'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 459, in _ensure_connection
+    return retry_over_time(
+        self._connection_factory, self.recoverable_connection_errors,
+    ...<2 lines>...
+        callback, timeout=timeout
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 938, in _connection_factory
+    self._connection = self._establish_connection()
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 860, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\transport\pyamqp.py", line 203, in establish_connection
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\connection.py", line 324, in connect
+    self.transport.connect()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 132, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\amqp\transport.py", line 187, in _connect
+    self.sock.connect(sa)
+    ~~~~~~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Projects\projects\ai_analyst\analysis\views.py", line 78, in post
+    task = run_analysis_file.delay(temp_path, user_instructions)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\task.py", line 601, in apply_async
+    return app.send_task(
+           ~~~~~~~~~~~~~^
+        self.name, args, kwargs, task_id=task_id, producer=producer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **options
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\base.py", line 930, in send_task
+    amqp.send_task_message(P, name, message, **options)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\celery\app\amqp.py", line 523, in send_task_message
+    ret = producer.publish(
+        body,
+    ...<8 lines>...
+        **properties
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 190, in publish
+    return _publish(
+        body, priority, content_type, content_encoding,
+        headers, properties, routing_key, mandatory, immediate,
+        exchange_name, declare, timeout, confirm_timeout, retry, retry_policy
+    )
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 556, in _ensured
+    return fun(*args, **kwargs)
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 200, in _publish
+    channel = self.channel
+              ^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 224, in _get_channel
+    channel = self._channel = channel()
+                              ~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\utils\functional.py", line 34, in __call__
+    value = self.__value__ = self.__contract__()
+                             ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\messaging.py", line 240, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 957, in default_channel
+    self._ensure_connection(**conn_opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 458, in _ensure_connection
+    with ctx():
+         ~~~^^
+  File "C:\Users\gabri\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\gabri\Projects\projects\ai_analyst\venv\Lib\site-packages\kombu\connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+2025-10-16 19:41:34,911 | ERROR | Internal Server Error: /api/analyze/

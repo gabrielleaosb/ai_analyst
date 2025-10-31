@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IA Analyst Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center p-6">
+  <h1 class="text-3xl font-bold text-gray-800 mb-6">💡 IA Analyst</h1>
+
+  <div class="bg-white p-6 rounded-2xl shadow-md w-full max-w-xl">
+    <form id="upload-form" class="flex flex-col gap-4">
+      <label class="block">
+        <span class="text-gray-700">Selecione um arquivo CSV ou Excel:</span>
+        <input
+          type="file"
+          id="file-input"
+          accept=".csv, .xlsx"
+          class="mt-2 block w-full text-sm text-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </label>
+
+      <label class="block">
+        <span class="text-gray-700">Instruções adicionais (opcional):</span>
+        <textarea
+          id="user-instructions"
+          rows="2"
+          placeholder="Ex: focar em tendências de crescimento e outliers"
+          class="mt-2 block w-full text-sm text-gray-700 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        ></textarea>
+      </label>
+
+      <button
+        type="submit"
+        class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition"
+      >
+        Enviar e Analisar
+      </button>
+    </form>
+
+    <div id="loading" class="hidden mt-4 text-blue-600 font-medium">
+      ⏳ Analisando dados, aguarde...
+    </div>
+
+    <div id="result" class="mt-6 p-4 bg-gray-50 border border-gray-200 rounded-lg hidden">
+      <h2 class="text-lg font-semibold mb-2 text-gray-800">Resultado da análise:</h2>
+      <p id="analysis-text" class="text-gray-700 whitespace-pre-line"></p>
+    </div>
+
+    <div id="graph" class="mt-6 p-4 bg-white rounded-lg shadow-md hidden"></div>
+  </div>
+
+  <script>
+    const form = document.getElementById("upload-form");
+    const fileInput = document.getElementById("file-input");
+    const instructionsInput = document.getElementById("user-instructions");
+    const loading = document.getElementById("loading");
+    const resultDiv = document.getElementById("result");
+    const analysisText = document.getElementById("analysis-text");
+    const graphDiv = document.getElementById("graph");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const file = fileInput.files[0];
+      if (!file) {
+        alert("Selecione um arquivo primeiro!");
+        return;
+      }
+
+      loading.classList.remove("hidden");
+      resultDiv.classList.add("hidden");
+      graphDiv.classList.add("hidden");
+
+      const formData = new FormData();
+      formData.append("file", file);
+
+      const instructions = instructionsInput.value;
+      if (instructions) {
+        formData.append("instructions", instructions);
+      }
+
+      try {
+        const response = await fetch("/api/analyze/", {
+          method: "POST",
+          body: formData,
+        });
+
+        const data = await response.json();
+        loading.classList.add("hidden");
+
+        if (data.analysis) {
+          analysisText.textContent = data.analysis;
+          resultDiv.classList.remove("hidden");
+
+          if (data.graph_data && data.graph_data.length > 0) {
+            const xCol = data.columns[0];  
+            const yCol = data.columns[1];  
+
+            const xValues = data.graph_data.map(row => row[xCol]);
+            const yValues = data.graph_data.map(row => row[yCol]);
+
+            const trace = {
+              x: xValues,
+              y: yValues,
+              type: 'scatter',
+              mode: 'lines+markers',
+              marker: {color: 'blue'},
+            };
+
+            const layout = {
+              title: `${yCol} vs ${xCol}`,
+              xaxis: {title: xCol},
+              yaxis: {title: yCol},
+            };
+
+            Plotly.newPlot('graph', [trace], layout);
+            graphDiv.classList.remove('hidden');
+          }
+        } else {
+          analysisText.textContent = "Erro: " + (data.error || "Falha na análise.");
+          resultDiv.classList.remove("hidden");
+        }
+      } catch (error) {
+        loading.classList.add("hidden");
+        alert("Erro ao conectar com o servidor.");
+      }
+    });
+  </script>
+</body>
+</html>
